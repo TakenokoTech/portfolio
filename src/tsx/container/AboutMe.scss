@@ -1,0 +1,43 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/color.scss';
+
+#aboutme {
+    position: relative;
+    color: $plane_text;
+
+    #aboutme_backgroud {
+
+        #aboutme_frame {
+            max-width: 960px;
+            margin: 0px auto;
+            padding: 80px 0;
+        }
+    }
+}
+
+.section_title {
+    color: $accent_color;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+}
+
+.section_content {
+    padding: 32px;
+    font-size: 36px;
+    word-wrap: break-word;
+}
+
+.section_title_r {
+    color: $sub1_color;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+}
+
+.section_content_r {
+    padding: 32px;
+    font-size: 36px;
+    word-wrap: break-word;
+    color: $reverse_text;
+}

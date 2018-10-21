@@ -1,0 +1,29 @@
+@import '../../sass/mixins.scss';
+@import '../../sass/color.scss';
+
+#skillset {
+    position: relative;
+    color: $plane_text;
+
+    #skillset_backgroud {
+        background-color: $sub2_color;
+
+        #skillset_frame {
+            max-width: 960px;
+            margin: 0px auto;
+            padding: 80px 0;
+
+            .skillset_ul {
+                padding: 8px 0;
+                padding-top: 32px;
+                font-weight: bold;
+            }
+            .skillset_li {
+                padding: 4px 0;
+            }
+            .skillset_li::before {
+                content: "　・"
+            }
+        }
+    }
+}
