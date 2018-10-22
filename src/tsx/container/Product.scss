@@ -1,14 +1,14 @@
 @import '../../sass/mixins.scss';
 @import '../../sass/color.scss';
 
-#aboutme {
+#product {
     position: relative;
     color: $plane_text;
 
-    #aboutme_backgroud {
+    #product_backgroud {
         // min-height: 1000px;
 
-        #aboutme_frame {
+        #product_frame {
             max-width: 960px;
             margin: 0px auto;
             padding: 100px 0;

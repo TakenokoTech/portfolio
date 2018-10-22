@@ -1,0 +1,26 @@
+@import './sass/color.scss';
+
+.section_title {
+    color: $accent_color;
+    width: 100%;
+    text-align: center;
+    font-size: 64px;
+}
+
+.section_title_r {
+    @extend .section_title;
+    color: $sub1_color;
+}
+
+.section_content {
+    padding: 32px;
+    font-size: 36px;
+    word-wrap: break-word;
+}
+
+.section_content_r {
+    @extend .section_content;
+    color: $reverse_text;
+}
+
+

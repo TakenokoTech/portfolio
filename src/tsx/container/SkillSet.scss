@@ -7,11 +7,12 @@
 
     #skillset_backgroud {
         background-color: $sub2_color;
+        // min-height: 1000px;
 
         #skillset_frame {
             max-width: 960px;
             margin: 0px auto;
-            padding: 80px 0;
+            padding: 100px 0;
 
             .skillset_ul {
                 padding: 8px 0;
