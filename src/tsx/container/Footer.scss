@@ -1,0 +1,26 @@
+@import '../../sass/mixins.scss';
+
+#footer {
+    position: relative;
+    color: #FFF;
+
+    #footer_backgroud {
+        width: 100%;
+        // height: 600px;
+        background: linear-gradient(180deg, #232526 0%, #414345 100%);
+        padding-bottom: 20px;
+
+        #footer_frame {
+            max-width: 960px;
+            margin: 0px auto;
+            padding-top: 20px;
+
+            #subtext {
+                text-align: center;
+                font-size: 16px;
+                @include max-screen($breakpoint-tablet) { font-size: 14px; }
+                @include max-screen($breakpoint-mobile) { font-size: 12px; }
+            }
+        }
+    }
+} 

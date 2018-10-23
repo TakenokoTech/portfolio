@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./SkillSet.scss";
+import Image from '../../asset/image.js'
 
 export interface SkillSetProps {
 }
@@ -26,6 +27,7 @@ export default class SkillSet extends React.Component<SkillSetProps, SkillSetSta
                             <div className="skillset_li">node.js</div>
                             <div className="skillset_li">golang</div>
                         </div>
+                        <img id="image" src={Image.grass} />
                     </div>
                 </div>
             </div>

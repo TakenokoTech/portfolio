@@ -2,7 +2,6 @@
 @import '../../sass/color.scss';
 
 #skillset {
-    position: relative;
     color: $plane_text;
 
     #skillset_backgroud {
@@ -10,6 +9,7 @@
         // min-height: 1000px;
 
         #skillset_frame {
+            position: relative;
             max-width: 960px;
             margin: 0px auto;
             padding: 100px 0;
@@ -24,6 +24,14 @@
             }
             .skillset_li::before {
                 content: "　・"
+            }
+
+            #image {
+                position: absolute;
+                height: 50%;
+                bottom: 16px;
+                right: 16px;
+                opacity: 0.1;
             }
         }
     }

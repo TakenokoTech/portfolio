@@ -4,8 +4,8 @@ import AboutMe from "./container/AboutMe"
 import SkillSet from "./container/SkillSet";
 import Product from "./container/Product";
 import Career from "./container/Career";
-import Contact from "./container/Career";
-import Footer from "./container/Header";
+import Contact from "./container/Contact";
+import Footer from "./container/Footer";
 
 export interface AppProps {
 }
