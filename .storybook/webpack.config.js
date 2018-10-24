@@ -10,9 +10,26 @@ module.exports = {
   plugins: [
     // your custom plugins
   ],
+
+  resolve: {
+    // Add '.ts' and '.tsx' as resolvable extensions.
+    extensions: [".ts", ".tsx", ".js", ".json"]
+  },
+
   module: {
     rules: [
-      // add your custom rules.
+      // A loader for webpack which transforms files into base64 URIs.
+      { test: /\.(pdf|jpg|png|gif|svg|ico)$/, use: [{ loader: 'url-loader', options: { name: './[path][name]-[hash:8].[ext]' } }] },
+
+      // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+
+      // Loads a Sass/SCSS file and compiles it to CSS.
+      { test: /\.scss$/, use: ['style-loader', "css-loader", "sass-loader"] },
+      { test: /\.html$/, use: [{ loader: 'html-loader', options: { minimize: true } }] },
+
+      // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+      { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
     ],
   },
 };
