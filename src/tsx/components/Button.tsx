@@ -2,6 +2,7 @@ import * as React from "react";
 import "./Button.scss";
 
 export interface ButtonProps {
+    className: ""
 }
 export interface ButtonState {
 }
@@ -19,7 +20,7 @@ export default class Header extends React.Component<ButtonProps, ButtonState> {
 
     render() {
         return (
-            <a className="button" onClick={this.onClick}>
+            <a className={`base_button ${this.props.className}`} onClick={this.onClick}>
                 Button
             </a>
         );

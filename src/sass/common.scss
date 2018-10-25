@@ -1,4 +1,5 @@
-@import './sass/color.scss';
+@import './color.scss';
+@import './mixins.scss';
 
 .section_title {
     color: $accent_color;

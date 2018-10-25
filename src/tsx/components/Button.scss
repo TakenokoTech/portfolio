@@ -1,16 +1,18 @@
-@import '../../sass/mixins.scss';
-@import '../../sass/color.scss';
+@import '../../sass/common.scss';
 
 .base_button {
     display: inline-block;
     width: 200px;
-    height: 54px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
-    line-height: 54px;
+    line-height: 50px;
     outline: none;
     transition: all .3s;
     box-sizing: border-box;
+    color: #666;
+    border: 2px solid #999;
+    cursor: pointer;
     &::before,
     &::after {
         position: absolute;
@@ -28,7 +30,6 @@
     background-color: #333;
     border: 2px solid #333;
     color: #fff;
-    line-height: 50px;
     z-index: 2;
     &:hover {
         background-color: #fff;
@@ -52,5 +53,25 @@
     }
     &::after {
         bottom: 0;
+    }
+}
+
+.button_reverse {
+    @extend .button;
+    background-color: $sub1_color;
+    border: 2px solid $sub1_color;
+    color: #fff;
+    &:hover {
+        background-color: #fff;
+        border-color: $sub1_color;
+        color: $sub1_color;
+        &::before,
+        &::after {
+            background-color: #999;
+        }
+    }
+    &::before,
+    &::after {
+        background-color: $sub1_color;
     }
 }
