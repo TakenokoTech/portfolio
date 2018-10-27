@@ -14,7 +14,8 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
             <div id="header">
                 <div id="header_backgroud">
                     <div id="header_frame">
-                        <img src={Image.name} />
+                        {/* <img src={Image.name} /> */}
+                        <div id="name">TAKENOKO</div>
                         <div id="subtext">software engineer</div>
                     </div>
                 </div>

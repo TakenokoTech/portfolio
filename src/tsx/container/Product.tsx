@@ -1,5 +1,8 @@
 import * as React from "react";
-import "./Product.scss";
+import {map} from 'ramda';
+import "./Product.scss"
+import STRING from '../../asset/string'
+import ImageBox from "../components/ImageBox"
 
 export interface ProductProps {
 }
@@ -13,9 +16,10 @@ export default class Product extends React.Component<ProductProps, ProductState>
                 <div id="product_backgroud">
                     <div id="product_frame">
                         <div className="section_title">
-                            Product
+                            PRODUCT
                         </div>
                         <div className="section_content">
+                            {map(x => <ImageBox img={x.img} title={x.title} text={x.text} url={x.url} />, STRING.product)}
                         </div>
                     </div>
                 </div>

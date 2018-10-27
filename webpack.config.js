@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const DEBUG = true;
 
 module.exports = {
-    mode: 'none',
+    mode: 'production',
 
     entry: "./src/index.tsx",
     output: {
@@ -28,7 +28,7 @@ module.exports = {
             { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
 
             // Loads a Sass/SCSS file and compiles it to CSS.
-            { test: /\.scss$/, use: [DEBUG ? 'style-loader' : MiniCssExtractPlugin.loader, "css-loader", "sass-loader"] },
+            { test: /\.(scss|sass)$/, use: [DEBUG ? 'style-loader' : MiniCssExtractPlugin.loader, "css-loader", "sass-loader"] },
             { test: /\.html$/, use: [{ loader: 'html-loader', options: { minimize: true } }] },
 
             // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.

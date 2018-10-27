@@ -6,6 +6,9 @@
 // When you add this file, we won't add the default configurations which is similar
 // to "React Create App". This only has babel loader to load JavaScript.
 
+const autoprefixer = require('autoprefixer')
+const postcssLoader = { loader: 'postcss-loader', options: { plugins: [autoprefixer({ grid: true })] } }
+
 module.exports = {
   plugins: [
     // your custom plugins
@@ -25,7 +28,7 @@ module.exports = {
       { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
 
       // Loads a Sass/SCSS file and compiles it to CSS.
-      { test: /\.scss$/, use: ['style-loader', "css-loader", "sass-loader"] },
+      { test: /\.(scss|sass)$/, use: ['style-loader', "css-loader", postcssLoader, "sass-loader"] },
       { test: /\.html$/, use: [{ loader: 'html-loader', options: { minimize: true } }] },
 
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.

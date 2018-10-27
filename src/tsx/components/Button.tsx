@@ -7,7 +7,7 @@ export interface ButtonProps {
 export interface ButtonState {
 }
 
-export default class Header extends React.Component<ButtonProps, ButtonState> {
+export default class Button extends React.Component<ButtonProps, ButtonState> {
 
     constructor(props) {
         super(props)

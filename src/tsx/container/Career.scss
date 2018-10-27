@@ -1,0 +1,29 @@
+@import '../../sass/common.scss';
+
+#career {
+    color: $plane_text;
+
+    #career_backgroud {
+            background-color: $sub2_color;
+
+            #career_frame {
+                position: relative;
+                max-width: 960px;
+                margin: 0px auto;
+                padding: 100px 0;
+                padding-bottom: 0px;
+                overflow: hidden;
+
+                .bigmark {
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    margin-left: 118px;
+                    background-color: $sub1_color;
+                    border-radius: 60px;
+                    bottom: -50px;
+                    border: solid 6px #fffA;
+                }
+            }
+    }
+}

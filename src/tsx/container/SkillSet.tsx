@@ -1,6 +1,8 @@
 import * as React from "react";
+import {map} from 'ramda';
 import "./SkillSet.scss";
-import Image from '../../asset/image.js'
+import STRING from '../../asset/string'
+import Image from '../../asset/image.js';
 
 export interface SkillSetProps {
 }
@@ -17,15 +19,12 @@ export default class SkillSet extends React.Component<SkillSetProps, SkillSetSta
                             SKILL SET
                         </div>
                         <div className="section_content_r">
-                            <div className="skillset_ul">Application</div>
-                            <div className="skillset_li">Single Page Aplication (javascript)</div>
-                            <div className="skillset_li">Android (kotlin, java)</div>
-                            <div className="skillset_li">iOS (Swift, Obj-C)</div>
-
-                            <div className="skillset_ul">Backend</div>
-                            <div className="skillset_li">Spring</div>
-                            <div className="skillset_li">node.js</div>
-                            <div className="skillset_li">golang</div>
+                            {
+                                map(x => [
+                                    (<div key={JSON.stringify(x)} className="skillset_ul">{x.title}</div>),
+                                    map(t => (<div key={t} className="skillset_li">{t}</div>), x.texts)
+                                ], STRING.skillset)
+                            }
                         </div>
                         <img id="image" src={Image.grass} />
                     </div>

@@ -1,5 +1,8 @@
 import * as React from "react";
+import {map} from 'ramda';
 import "./AboutMe.scss";
+
+import STRING from '../../asset/string'
 
 export interface AboutMeProps {
 }
@@ -16,7 +19,11 @@ export default class AboutMe extends React.Component<AboutMeProps, AboutMeState>
                             ABOUT ME
                         </div>
                         <div className="section_content">
-                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            <div className="text">
+                            {
+                                map(x=> [ x, <br key={JSON.stringify(x)}/> ], STRING.aboutme.text)
+                            }
+                            </div>
                         </div>
                     </div>
                 </div>

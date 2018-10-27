@@ -1,0 +1,43 @@
+@import '../../sass/common.scss';
+
+#contact {
+    color: $sub1_color;
+
+    #contact_backgroud {
+            background-color: $sub1_color;
+            border-top: 6px solid #fffA;
+
+            #contact_frame {
+                position: relative;
+                max-width: 960px;
+                margin: 0px auto;
+                padding: 100px 0;
+
+                .section_title {
+                    color: $sub2_color
+                }
+                .section_content{
+                    padding: 80px 0;
+                    text-align: center;
+                    .email1 {
+                        width: 100%;
+                        color: $reverse_text
+                    }
+                    .email2 {
+                        width: 100%;
+                        color: $accent_color
+                    }
+                }
+
+                .bigmark {
+                    position: absolute;
+                    width: 88px;
+                    height: 88px;
+                    margin-left: 124px;
+                    background-color: $sub1_color;
+                    border-radius: 60px;
+                    top: -45px;
+                }
+            }
+    }
+}
