@@ -14,7 +14,7 @@ export default class AboutMe extends React.Component<AboutMeProps, AboutMeState>
         return (
             <div id="aboutme">
                 <div id="aboutme_backgroud">
-                    <div id="aboutme_frame">
+                    <div id="aboutme_frame" className="section_frame">
                         <div className="section_title">
                             ABOUT ME
                         </div>

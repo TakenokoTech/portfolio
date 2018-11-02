@@ -32,14 +32,14 @@ export default class SkillSet extends React.Component<SkillSetProps, SkillSetSta
         return (
             <div id="skillset">
                 <div id="skillset_backgroud">
-                    <div id="skillset_frame">
+                    <div id="skillset_frame" className="section_frame">
                         <div className="section_title_r">
                             SKILL SET
                         </div>
                         <div className="section_content_r">
                             {
                                 map(x => [
-                                    (<div key={JSON.stringify(x)} className="skillset_ul">{x.title}</div>),
+                                    (<div key={JSON.stringify(x)} className={`skillset_ul index${x.no}`}>{x.title}</div>),
                                     map(t => (<div key={t} className="skillset_li">{t}</div>), x.texts)
                                 ], STRING.skillset)
                             }

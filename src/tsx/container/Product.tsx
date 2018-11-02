@@ -14,7 +14,7 @@ export default class Product extends React.Component<ProductProps, ProductState>
         return (
             <div id="product">
                 <div id="product_backgroud">
-                    <div id="product_frame">
+                    <div id="product_frame" className="section_frame">
                         <div className="section_title">
                             PRODUCT
                         </div>

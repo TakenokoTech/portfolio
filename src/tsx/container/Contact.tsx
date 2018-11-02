@@ -11,7 +11,7 @@ export default class Contact extends React.Component<ContactProps, ContactState>
         return (
             <div id="contact">
                 <div id="contact_backgroud">
-                    <div id="contact_frame">
+                    <div id="contact_frame" className="section_frame">
                         <div className="section_title">
                             CONTACT
                         </div>

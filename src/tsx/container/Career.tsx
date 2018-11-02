@@ -15,7 +15,7 @@ export default class Career extends React.Component<CareerProps, CareerState> {
         return (
             <div id="career">
                 <div id="career_backgroud">
-                    <div id="career_frame">
+                    <div id="career_frame" className="section_frame">
                         <div className="section_title_r">
                             CAREER
                         </div>

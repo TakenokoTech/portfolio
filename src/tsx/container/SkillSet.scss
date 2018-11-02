@@ -9,14 +9,15 @@
 
         #skillset_frame {
             position: relative;
-            max-width: 960px;
-            margin: 0px auto;
-            padding: 100px 0;
 
             .skillset_ul {
                 padding: 8px 0;
                 padding-top: 32px;
                 font-weight: bold;
+
+                &.index1 {
+                    padding-top: 0px;
+                }
             }
             .skillset_li {
                 padding: 4px 0;
@@ -27,7 +28,7 @@
 
             #image {
                 position: absolute;
-                height: 50%;
+                width: 50%;
                 bottom: 16px;
                 right: 16px;
                 opacity: 0.1;

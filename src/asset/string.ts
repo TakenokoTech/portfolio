@@ -11,6 +11,7 @@ export default {
         ]
     },
     skillset: [{
+        no: 1,
         title: "Application",
         texts: [
             "Single Page Aplication (javascript)",
@@ -18,6 +19,7 @@ export default {
             "iOS (Swift, Obj-C)"
         ]
     }, {
+        no: 2,
         title: "Backend",
         texts: [
             "Spring",
