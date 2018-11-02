@@ -1,17 +1,14 @@
 @import '../../sass/common.scss';
-
+$image_size: 128px;
 #header {
     position: relative;
     color: #FFF;
     user-select: none;
-
     #header_backgroud {
         width: 100%;
         background: linear-gradient(180deg, #232526 0%, #414345 100%);
         background: #232526;
         box-shadow: 0px 1px 8px 4px #999;
-        
-
         #header_frame {
             max-width: 960px;
             margin: 0px auto;
@@ -25,38 +22,56 @@
                 padding-top: 20px;
                 padding-bottom: 40px;
             }
-
             img {
                 width: 100%;
                 padding: 16px;
             }
-
             #name {
                 text-align: center;
                 font-size: 168px;
-                @include max-screen($breakpoint-tablet) { font-size: 84px; }
-                @include max-screen($breakpoint-mobile) { font-size: 42px; }
-                font-family: 'Righteous', cursive;
+                @include max-screen($breakpoint-tablet) {
+                    font-size: 84px;
+                }
+                @include max-screen($breakpoint-mobile) {
+                    font-size: 42px;
+                }
+                font-family: 'Righteous',
+                cursive;
             }
-
             #subtext {
                 text-align: center;
                 font-size: 64px;
-                @include max-screen($breakpoint-tablet) { font-size: 32px; }
-                @include max-screen($breakpoint-mobile) { font-size: 16px; }
+                @include max-screen($breakpoint-tablet) {
+                    font-size: 32px;
+                }
+                @include max-screen($breakpoint-mobile) {
+                    font-size: 16px;
+                }
                 color: #FFF6;
+            }
+            #button {
+                margin-top: 64px;
+                text-align: center;
+                a {
+                    height: 64px;
+                    width: 64px;
+                    margin: 8px;
+                    font-size: 32px;
+                    &:hover {
+                        color: $main_color;
+                    }
+                }
             }
         }
     }
-
     #profile_image {
         position: absolute;
-        width: 256px;
-        height: 256px;
-        top: 472px;
-        left: calc(50% - 256px/2);
+        width: $image_size;
+        height: $image_size;
+        bottom: -$image_size/2;
+        left: calc(50% - #{$image_size} /2);
         box-sizing: border-box;
         border-radius: 300px;
         border: 8px solid rgba(255, 255, 255, 0.8);
     }
-} 
+}

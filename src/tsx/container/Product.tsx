@@ -19,7 +19,7 @@ export default class Product extends React.Component<ProductProps, ProductState>
                             PRODUCT
                         </div>
                         <div className="section_content">
-                            {map(x => <ImageBox img={x.img} title={x.title} text={x.text} url={x.url} />, STRING.product)}
+                            {map(x => <ImageBox no={x.no} img={x.img} title={x.title} text={x.text} url={x.url} />, STRING.product)}
                         </div>
                     </div>
                 </div>

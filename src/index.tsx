@@ -6,5 +6,5 @@ import App from "./tsx/App"
 
 import "./style.scss"
 
-ReactDOM.render(<App/>, document.getElementById("example"));
+ReactDOM.render(<App />, document.getElementById("example"));
 // ReactDOM.render(<Hello compiler="TypeScript" framework="React" />, document.getElementById("example"));

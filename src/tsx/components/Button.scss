@@ -58,13 +58,13 @@
 
 .button_reverse {
     @extend .button;
-    background-color: $sub1_color;
-    border: 2px solid $sub1_color;
+    background-color: $main_color;
+    border: 2px solid $main_color;
     color: #fff;
     &:hover {
         background-color: #fff;
-        border-color: $sub1_color;
-        color: $sub1_color;
+        border-color: $main_color;
+        color: $main_color;
         &::before,
         &::after {
             background-color: #999;
@@ -72,6 +72,6 @@
     }
     &::before,
     &::after {
-        background-color: $sub1_color;
+        background-color: $main_color;
     }
 }

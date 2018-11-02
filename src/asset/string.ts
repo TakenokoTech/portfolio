@@ -27,12 +27,14 @@ export default {
     }],
     product: [
         {
+            no: 1,
             img: Image.icon,
             title: "android app",
             text: "blackboard app, notify app",
             url: "https://play.google.com/store/apps/dev?id=5785483366313980962&hl=ja"
         },
         {
+            no: 2,
             img: Image.github,
             title: "GitHub",
             text: "Repositories",
