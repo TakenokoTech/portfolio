@@ -66,7 +66,8 @@
         @include max-screen($breakpoint-mobile) {
             width: $careerboox_graph_width_m;
             min-width: $careerboox_graph_width_m;
-        }    
+            font-size: 11px;
+        }
     }
 
     .mark {
