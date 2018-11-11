@@ -1,0 +1,174 @@
+@import "../../sass/common.scss";
+/** **/
+
+.scene1 {
+    overflow: hidden;
+}
+
+.scene1[data-state="displayNone"] {
+    animation: fadeout 1.0s ease 1.0s forwards;
+    @keyframes back {
+        from {
+            background: #282a36;
+        }
+        to {
+            background: #000;
+        }
+    }
+    .background {
+        animation: back 1.2s ease 1.0s forwards;
+    }
+}
+
+.chapter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include pc-layout {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    @include sp-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .effect {
+        position: relative;
+        overflow: hidden;
+        @include pc-layout {
+            width: 30vw;
+            height: 30vw;
+        }
+        @include sp-layout {
+            width: 30vh;
+            height: 30vh;
+        }
+    }
+}
+
+.background {
+    background: #282a36
+}
+
+.chapter-0 {
+    .chapter-0__view-1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        font: bold 400% Consolas, Monaco, monospace;
+        border-right: .03em solid;
+        width: 12ch;
+        color: white;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.chapter-0[data-state="active"] {
+    .chapter-0__view-1 {
+        animation: typing 3s steps(12, end), blink-caret .5s step-end infinite alternate;
+    }
+}
+
+.chapter-0[data-state="remove"] {
+    .chapter-0__view-1 {
+        animation: fadeout 0.2s ease 0s forwards;
+    }
+}
+
+
+.chapter-1 {
+    .effect {
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transform: scale(0);
+        }
+        &::before {
+            background-color: #c3ce5f;
+        }
+        &::after {
+            background-color: $sub2_color;
+        }
+    }
+}
+
+.chapter-1[data-state="active"] {
+    .chapter-1__view-1 {
+        .effect:nth-child(1) {
+            &::before {
+                animation: scale0-1 0.4s ease 0s forwards;
+            }
+            &::after {
+                animation: scale0-1 0.4s ease 0.1s forwards;
+            }
+            animation: fadeout 0.01s ease 0.5s forwards;
+        }
+        .effect:nth-child(2) {
+            &::before {
+                animation: scale0-1 0.4s ease 0.2s forwards;
+            }
+            &::after {
+                animation: scale0-1 0.4s ease 0.3s forwards;
+            }
+            animation: fadeout 0.01s ease 0.7s forwards;
+        }
+        .effect:nth-child(3) {
+            &::before {
+                animation: scale0-1 0.4s ease 0.4s forwards;
+            }
+            &::after {
+                animation: scale0-1 0.4s ease 0.5s forwards;
+            }
+            animation: fadeout 0.01s ease 0.9s forwards;
+        }
+    }
+}
+
+.skipbutton {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 200px;
+    height: 50px;
+    color: #CCC;
+    background-color: transparent;
+    border: 0;
+    border-radius: 10px;
+    transform: scale(0);
+    cursor: pointer;
+    overflow: hidden;
+    font: bold 200% Consolas, Monaco, monospace;
+    animation: scale0-1 0.6s ease 1.0s forwards;
+    &:hover {
+        background-color: #6666;
+        transform: scale(0);
+        transition: all .35s ease-in-out 0s
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        top: 2px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        border: dashed 1px #CCC6;
+        border-radius: 5px;
+    }
+}
