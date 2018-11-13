@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const DEBUG = true;
 
 module.exports = {
@@ -43,7 +44,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: "./public/index.html"
-        })
+        }),
+        new FaviconsWebpackPlugin('./src/asset/grass_b.png')
     ],
 
     // When importing a module whose path matches one of the following, just
