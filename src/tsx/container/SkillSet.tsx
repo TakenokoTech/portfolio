@@ -4,6 +4,7 @@ import ScrollReveal from "scrollreveal"
 import "./SkillSet.scss";
 import STRING from '../../asset/string'
 import Image from '../../asset/image.js';
+import PandaVRM from "../components/PandaVRM";
 
 export interface SkillSetProps {
 }
@@ -44,7 +45,8 @@ export default class SkillSet extends React.Component<SkillSetProps, SkillSetSta
                                 ], STRING.skillset)
                             }
                         </div>
-                        <img id="image" src={Image.grass} ref='img' />
+                        {/* <img id="image" src={Image.grass} ref="img" /> */}
+                        <PandaVRM />
                     </div>
                 </div>
             </div>
