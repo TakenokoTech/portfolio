@@ -67,7 +67,6 @@ export default class PandaVRM extends React.Component<
                 key.rot[3]
             );
         }
-        console.log(this.camera.position);
     }
 
     addScene() {

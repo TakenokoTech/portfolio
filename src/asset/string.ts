@@ -41,6 +41,13 @@ export default {
             title: "GitHub",
             text: "Repositories",
             url: "https://github.com/TakenokoTech"
+        },
+        {
+            no: 3,
+            img: Image.qiita,
+            title: "Qiita",
+            text: "tips",
+            url: "https://qiita.com/TakenokoTech"
         }
     ],
     career: [
