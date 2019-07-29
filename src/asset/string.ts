@@ -26,6 +26,13 @@ export default {
             "node.js",
             "golang"
         ]
+    }, {
+        no: 3,
+        title: "Certificate",
+        texts: [
+            "Applied Information Technology Engineer",
+            "Virtual Reality Specialist"
+        ]
     }],
     product: [
         {

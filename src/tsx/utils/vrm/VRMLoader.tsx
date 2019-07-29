@@ -1,6 +1,6 @@
 import GLTFLoader from "three-gltf-loader";
 import { LoadingManager, DefaultLoadingManager } from "three";
-import { type } from "os";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 type onLoad = Function;
 type onProgress = (event: ProgressEvent) => void;
@@ -57,7 +57,7 @@ export default class VRMLoader {
         return this;
     }
 
-    setDRACOLoader(dracoLoader: object) {
+    setDRACOLoader(dracoLoader: DRACOLoader) {
         this.glTFLoader.setDRACOLoader(dracoLoader);
         return this;
     }
