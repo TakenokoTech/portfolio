@@ -14,8 +14,8 @@ export default {
         no: 1,
         title: "Application",
         texts: [
-            "Single Page Aplication (javascript)",
-            "Android (kotlin, java)",
+            "Single Page Aplication (JavaScript, TypeScript)",
+            "Android (Kotlin, Java)",
             "iOS (Swift, Obj-C)"
         ]
     }, {
@@ -78,6 +78,6 @@ export default {
         email: "takenoko.tech@gmail.com"
     },
     fotter: {
-        text: "© 2018 Takenoko Tech."
+        text: "© 2019 Takenoko Tech."
     }
 }
