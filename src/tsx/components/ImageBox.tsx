@@ -34,7 +34,7 @@ export default class ImageBox extends React.Component<ImageBoxProps, ImageBoxSta
                 <div className="mask">
                     <h2>{this.props.title}</h2>
                     <p>{this.props.text}</p>
-                    <a href={this.props.url} className="info">link</a>
+                    <a href={this.props.url} className="info"></a>
                 </div>
             </div>
         );
