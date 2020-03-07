@@ -1,7 +1,8 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
 const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
-const DEBUG = true;
+const DEBUG = false;
 
 module.exports = {
     mode: "production",
@@ -67,6 +68,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./public/index.html"
         }),
+
+        new CopyPlugin([
+            { from: "public/anime.json", to: "anime.json" },
+            { from: "public/panda.vrm", to: "panda.vrm" }
+        ]),
 
         new FaviconsWebpackPlugin("./src/asset/grass_b.png")
     ],
