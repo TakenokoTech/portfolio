@@ -1,0 +1,62 @@
+@import '../../sass/common.scss';
+
+#contact {
+    color: $sub1_color;
+
+    #contact_backgroud {
+            background-color: $sub1_color;
+            border-top: 8px solid #fffA;
+
+            #contact_frame {
+                position: relative;
+
+                .section_title {
+                    color: $sub2_color
+                }
+                .section_content{
+                    padding: 80px 0;
+                    text-align: center;
+                    .email1 {
+                        width: 100%;
+                        color: $reverse_text
+                    }
+                    .email2 {
+                        width: 100%;
+                        color: $accent_color
+                    }
+
+                    @include max-screen($breakpoint-tablet) {
+                        padding: 40px 0;
+                    }
+    
+                    @include max-screen($breakpoint-mobile) {
+                        padding: 20px 0;
+                    } 
+                }
+
+                .bigmark {
+                    position: absolute;
+                    width: $careerboox_graph_width_b - $careerboox_graph_b_width*2;
+                    height: $careerboox_graph_width_b - $careerboox_graph_b_width*2;
+                    margin-left: $careerboox_graph_width_b + $careerboox_graph_b_width;
+                    background-color: $sub1_color;
+                    border-radius: $careerboox_graph_width_b;
+                    top: -$careerboox_graph_width_b / 2;
+
+                    @include max-screen($breakpoint-tablet) {
+                        width: $careerboox_graph_width_t - $careerboox_graph_b_width*2;
+                        height: $careerboox_graph_width_t - $careerboox_graph_b_width*2;
+                        margin-left: $careerboox_graph_width_t + $careerboox_graph_b_width;
+                        top: -$careerboox_graph_width_t /2;
+                    }
+    
+                    @include max-screen($breakpoint-mobile) {
+                        width: $careerboox_graph_width_m - $careerboox_graph_b_width*2;
+                        height: $careerboox_graph_width_m - $careerboox_graph_b_width*2;
+                        margin-left: $careerboox_graph_width_m + $careerboox_graph_b_width;
+                        top: -$careerboox_graph_width_m /2;
+                    } 
+                }
+            }
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../sass/common.scss';
+
+#career {
+    color: $plane_text;
+
+    #career_backgroud {
+            background-color: $sub2_color;
+
+            #career_frame {
+                position: relative;
+                padding-bottom: 0px;
+                overflow: hidden;
+                
+                .section_content_r {
+                    padding: 0;
+                }
+
+                .bigmark {
+                    position: absolute;
+                    width: $careerboox_graph_width_b;
+                    height: $careerboox_graph_width_b;
+                    bottom: -$careerboox_graph_width_b / 2;
+                    margin-left: $careerboox_graph_width_b;
+                    background-color: $sub1_color;
+                    border-radius: $careerboox_graph_width_b;
+                    border: solid $careerboox_graph_b_width unquote('#fffA');
+
+                    @include max-screen($breakpoint-tablet) {
+                        width: $careerboox_graph_width_t;
+                        height: $careerboox_graph_width_t;
+                        bottom: - $careerboox_graph_width_t / 2;
+                        margin-left: $careerboox_graph_width_t;
+                    }
+    
+                    @include max-screen($breakpoint-mobile) {
+                        width: $careerboox_graph_width_m;
+                        height: $careerboox_graph_width_m;
+                        bottom: - $careerboox_graph_width_m / 2;
+                        margin-left: $careerboox_graph_width_m;
+                    } 
+                }
+            }
+    }
+}

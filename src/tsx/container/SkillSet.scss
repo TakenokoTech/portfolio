@@ -1,0 +1,44 @@
+@import '../../sass/common.scss';
+
+#skillset {
+    color: $plane_text;
+
+    #skillset_backgroud {
+        background-color: $sub2_color;
+        // min-height: 1000px;
+
+        #skillset_frame {
+            position: relative;
+
+            .section_content_r {
+                position: relative;
+                z-index: 100;
+                pointer-events: none;
+            }
+
+            .skillset_ul {
+                padding: 8px;
+                padding-top: 32px;
+                font-weight: bold;
+
+                &.index1 {
+                    padding-top: 0px;
+                }
+            }
+            .skillset_li {
+                padding: 4px 0;
+            }
+            .skillset_li::before {
+                content: "　・"
+            }
+
+            #image {
+                position: absolute;
+                width: 50%;
+                bottom: 16px;
+                right: 16px;
+                opacity: 0.1;
+            }
+        }
+    }
+}

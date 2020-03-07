@@ -1,0 +1,143 @@
+@import '../../sass/common.scss';
+
+.career_box {
+    display: flex;
+    overflow: hidden;
+
+    .graph {
+        position: relative;
+        width: $careerboox_graph_width_b;
+
+        @include max-screen($breakpoint-tablet) {
+            width: $careerboox_graph_width_t;
+        }
+
+        @include max-screen($breakpoint-mobile) {
+            width: $careerboox_graph_width_m;
+        }   
+
+        .border {
+            position: absolute;
+            height: 100%;
+            width: $careerboox_graph_b_width;
+            background-color: #90AFC5;
+            border: solid 1px #fff3;
+            left: ($careerboox_graph_width_b - $careerboox_graph_b_width)/2;
+
+            @include max-screen($breakpoint-tablet) {
+                left: ($careerboox_graph_width_t - $careerboox_graph_b_width)/2;
+            }
+    
+            @include max-screen($breakpoint-mobile) {
+                left: ($careerboox_graph_width_m - $careerboox_graph_b_width)/2;
+            }    
+        }
+    
+        .point {
+            position: absolute;
+            background-color: #90AFC5;
+            border: solid $careerboox_graph_b_width unquote('#fffA');
+            width: $careerboox_graph_width_b;
+            height: $careerboox_graph_width_b;
+            border-radius: $careerboox_graph_width_b;
+
+            @include max-screen($breakpoint-tablet) {
+                width: $careerboox_graph_width_t;
+                height: $careerboox_graph_width_t;
+            }
+    
+            @include max-screen($breakpoint-mobile) {
+                width: $careerboox_graph_width_m;
+                height: $careerboox_graph_width_m;
+            }    
+        }
+    }
+
+    .year {
+        width: $careerboox_graph_width_b;
+        min-width: $careerboox_graph_width_b;
+        padding-left: 4px;
+
+        @include max-screen($breakpoint-tablet) {
+            width: $careerboox_graph_width_t;
+            min-width: $careerboox_graph_width_t;
+        }
+
+        @include max-screen($breakpoint-mobile) {
+            width: $careerboox_graph_width_m;
+            min-width: $careerboox_graph_width_m;
+            font-size: 11px;
+        }
+    }
+
+    .mark {
+        width: 0;
+        height: 0;
+        border-top: $careerboox_graph_width_b/4 solid transparent;
+        border-right: $careerboox_graph_width_b/4 solid #90AFC5;
+        border-bottom: $careerboox_graph_width_b/4 solid transparent;
+        margin-top: $careerboox_graph_width_b/4;
+
+        @include max-screen($breakpoint-tablet) {
+            border-top: $careerboox_graph_width_t/4 solid transparent;
+            border-right: $careerboox_graph_width_t/4 solid #90AFC5;
+            border-bottom: $careerboox_graph_width_t/4 solid transparent;
+            margin-top: $careerboox_graph_width_t/4;
+        }
+
+        @include max-screen($breakpoint-mobile) {
+            border-top: $careerboox_graph_width_m/4 solid transparent;
+            border-right: $careerboox_graph_width_m/4 solid #90AFC5;
+            border-bottom: $careerboox_graph_width_m/4 solid transparent;
+            margin-top: $careerboox_graph_width_m/4;
+        } 
+    }
+
+    .box {
+        width: 75%;
+        min-height: 100px;
+        background-color: #90AFC5;
+        padding: 24px;
+        padding-top: 16px;
+        margin-bottom: 64px;
+
+        .title {
+            font-size: 36px;
+        }
+
+        .split {
+            width: 100%;
+            height: 2px;
+            background-color: #FFF;
+        }
+
+        .text {
+            padding-top: 8px;
+            font-size: 24px;
+        }
+
+        @include max-screen($breakpoint-tablet) {
+            margin-bottom: 48px;
+
+            .title {
+                font-size: 18px;
+            }
+
+            .text {
+                font-size: 12px;
+            }
+        }
+
+        @include max-screen($breakpoint-mobile) {
+            margin-bottom: 32px;
+
+            .title {
+                font-size: 14px;
+            }
+
+            .text {
+                font-size: 11px;
+            }
+        } 
+    }
+}
