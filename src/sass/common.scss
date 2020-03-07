@@ -11,6 +11,7 @@ $careerboox_graph_b_width: 8px;
     max-width: 960px;
     margin: 0px auto;
     padding: 100px 0;
+    user-select: none;
     @include max-screen($breakpoint-tablet) {
         padding: 50px 0;
     }

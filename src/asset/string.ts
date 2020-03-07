@@ -72,12 +72,17 @@ export default {
             year: "2018",
             title: "iOS, Android Apps",
             text: "Reactive Extensions (ReactiveX) is an interesting library. Cool asynchronous processing and error handling. I was captivated."
+        },
+        {
+            year: "2019",
+            title: "Location Based Service",
+            text: "Better services can be provided using location information. Modern development using Kotlin Coroutines."
         }
     ],
     contact: {
         email: "takenoko.tech@gmail.com"
     },
     fotter: {
-        text: "© 2019 Takenoko Tech."
+        text: "© 2020 Takenoko Tech."
     }
 }

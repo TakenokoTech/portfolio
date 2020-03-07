@@ -10,6 +10,12 @@
         #skillset_frame {
             position: relative;
 
+            .section_content_r {
+                position: relative;
+                z-index: 100;
+                pointer-events: none;
+            }
+
             .skillset_ul {
                 padding: 8px;
                 padding-top: 32px;

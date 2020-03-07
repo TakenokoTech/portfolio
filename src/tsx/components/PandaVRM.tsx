@@ -107,6 +107,8 @@ export default class PandaVRM extends React.Component<
         const controls = new OrbitControls(this.camera, this.refs.box);
         controls.target.set(0, 75, 0);
         controls.enableKeys = false;
+        controls.enablePan = false;
+        controls.enableZoom = false;
         controls.update();
         return controls;
     }
