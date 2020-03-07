@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "webpack",
+        "build": "npm ci && npm start",
         "watch": "webpack -w",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
