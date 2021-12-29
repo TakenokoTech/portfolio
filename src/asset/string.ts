@@ -76,7 +76,17 @@ export default {
         {
             year: "2019",
             title: "Location Based Service",
-            text: "Better services can be provided using location information. Modern development using Kotlin Coroutines."
+            text: "Better services can be provided using location. Modern development using Kotlin Coroutines."
+        },
+        {
+            year: "2020",
+            title: "HoloLens Apps",
+            text: "Provided an immersive experience using Mixed Reality devices."
+        },
+        {
+            year: "2021",
+            title: "EdgeAI platform",
+            text: "Achieved fast machine learning inference on-device using TensorFlow Lite."
         }
     ],
     contact: {
