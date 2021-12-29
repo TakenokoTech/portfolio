@@ -93,6 +93,6 @@ export default {
         email: "takenoko.tech@gmail.com"
     },
     fotter: {
-        text: "© 2020 Takenoko Tech."
+        text: "© 2022 Takenoko Tech."
     }
 }
