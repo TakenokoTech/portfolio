@@ -3,8 +3,8 @@
         "outDir": "./dist/",
         "sourceMap": true,
         "noImplicitAny": false,
-        "module": "commonjs",
-        "target": "esnext",
+        "module": "CommonJS",
+        "target": "ESNext",
         "jsx": "react",
         "resolveJsonModule": true,
         "esModuleInterop": true

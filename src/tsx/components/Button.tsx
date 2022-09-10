@@ -3,6 +3,7 @@ import "./Button.scss";
 
 export interface ButtonProps {
     className: string
+    children: any
 }
 export interface ButtonState {
 }

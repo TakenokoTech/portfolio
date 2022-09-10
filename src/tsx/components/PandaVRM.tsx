@@ -2,8 +2,7 @@ import * as React from "react";
 import * as THREE from "three";
 import OrbitControls from "three-orbitcontrols";
 import WebVRM from "../utils/vrm/WebVRM";
-import GLTFLoader from "three-gltf-loader";
-import { Vector3, Quaternion } from "three";
+import { Vector3 } from "three";
 // import WebVRM from "ts-vrm/src/ts-vrm/vrm/WebVRM";
 import "./PandaVRM.scss";
 
