@@ -4,6 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "preinstall": "npx npm-force-resolutions && npm install",
         "start": "webpack",
         "build": "npm ci && npm start",
         "watch": "webpack -w",
@@ -59,5 +60,11 @@
         "presets": [
             "@babel/preset-react"
         ]
+    },
+    "resolutions": {
+        "glob-parent": "^6.0.2",
+        "trim": "^0.0.3",
+        "minimist": "^1.2.6",
+        "trim-newlines": "^4.0.2"
     }
 }
