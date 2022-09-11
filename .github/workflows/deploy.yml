@@ -6,6 +6,8 @@ name: Node.js CI
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master, develop ]
 
 jobs:
   build:
@@ -14,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -29,6 +31,7 @@ jobs:
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
+      if: github.event_name == 'push'
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
