@@ -35,8 +35,7 @@ $image_size: 128px;
                 @include max-screen($breakpoint-mobile) {
                     font-size: 48px;
                 }
-                font-family: 'Righteous',
-                cursive;
+                font-family: 'Righteous', serif;
             }
             #subtext {
                 text-align: center;

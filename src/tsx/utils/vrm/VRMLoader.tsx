@@ -1,5 +1,5 @@
-import GLTFLoader from "three-gltf-loader";
 import { LoadingManager, DefaultLoadingManager } from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 type onLoad = Function;
@@ -43,22 +43,22 @@ export default class VRMLoader {
     }
 
     setCrossOrigin(value: string) {
-        this.glTFLoader.setCrossOrigin(value);
+        // this.glTFLoader.setCrossOrigin(value);
         return this;
     }
 
     setPath(value: string) {
-        this.glTFLoader.setPath(value);
+        // this.glTFLoader.setPath(value);
         return this;
     }
 
     setResourcePath(value: string) {
-        this.glTFLoader.setResourcePath(value);
+        // this.glTFLoader.setResourcePath(value);
         return this;
     }
 
     setDRACOLoader(dracoLoader: DRACOLoader) {
-        this.glTFLoader.setDRACOLoader(dracoLoader);
+        // this.glTFLoader.setDRACOLoader(dracoLoader);
         return this;
     }
 

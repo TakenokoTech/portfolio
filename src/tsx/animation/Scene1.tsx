@@ -92,7 +92,7 @@ export default class Screen1 extends React.Component<Screen1Props, Screen1State>
                     </div>
                 </div>
                 <button className="skipbutton" onClick={() => this.props.finishTrigger()}>
-                    SKIP >>
+                    SKIP {">>"}
                 </button>
             </div>
         );

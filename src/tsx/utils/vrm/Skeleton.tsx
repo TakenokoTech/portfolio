@@ -1,5 +1,6 @@
 // tslint:disable-next-line:no-empty-interface
 
+import * as THREE from "three";
 import { Scene, AnimationClip, Object3D } from "three";
 import { GlTFProperty } from "../schema/glTF/glTF.schema";
 import { Vrm, VrmHumanoidBone } from "../schema/UniVRM/vrm.schema";
