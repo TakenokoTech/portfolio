@@ -10,7 +10,6 @@
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
         "deploy": "gh-pages -d dist",
-        "preinstall": "npx npm-force-resolutions",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
@@ -61,5 +60,10 @@
             "@babel/preset-react"
         ]
     },
-    "resolutions": {}
+    "resolutions": {
+        "glob-parent": "^6.0.2",
+        "trim": "^0.0.3",
+        "minimist": "^1.2.6",
+        "trim-newlines": "^4.0.2"
+    }
 }
