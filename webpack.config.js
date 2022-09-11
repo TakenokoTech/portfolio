@@ -37,7 +37,7 @@ module.exports = {
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
             {
                 test: /\.tsx?$/,
-                loader: "awesome-typescript-loader"
+                loader: "ts-loader"
             },
 
             // Loads a Sass/SCSS file and compiles it to CSS.
@@ -69,10 +69,12 @@ module.exports = {
             template: "./public/index.html"
         }),
 
-        new CopyPlugin([
-            { from: "public/anime.json", to: "anime.json" },
-            { from: "public/panda.vrm", to: "panda.vrm" }
-        ]),
+        new CopyPlugin({
+            patterns: [
+                { from: "public/anime.json", to: "anime.json" },
+                { from: "public/panda.vrm", to: "panda.vrm" }
+            ]
+        }),
 
         new FaviconsWebpackPlugin("./src/asset/grass_b.png")
     ],
@@ -87,6 +89,4 @@ module.exports = {
     },
 
     performance: { hints: false },
-
-    devtool: "inline-source-map"
 };

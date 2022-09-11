@@ -65,7 +65,7 @@ export default class WebVRM {
 
     private attachMaterial(object3D: Object3D) {
         const createMaterial = (material: any): THREE.MeshBasicMaterial => {
-            let newMaterial = new CustomMeshBasicMaterial();
+            let newMaterial: any = new CustomMeshBasicMaterial();
             newMaterial.name = material.name;
             newMaterial.color.copy(material.color);
             newMaterial.map = material.map;
@@ -111,6 +111,7 @@ export default class WebVRM {
 
 interface CustomObject3D extends Object3D {
     material: any;
+    castShadow: boolean;
 }
 
 class CustomMeshBasicMaterial extends MeshBasicMaterial {
