@@ -1,0 +1,69 @@
+#experience {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  background-color: #f6f6f6;
+  line-height: 1.5;
+  padding: 48px;
+}
+
+#experience_backgroud {
+  max-width: 960px;
+  padding: 16px 32px 32px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+// ========================================
+// Markdown
+// ========================================
+#experience h1, #experience h2, #experience h3, #experience h4, #experience h5, #experience h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+#experience h1 {
+  //padding-top: 1em;
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #d8dee4;
+}
+
+#experience h2 {
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #d8dee4;
+}
+
+#experience h3 {
+  padding-top: 0.5em;
+  font-size: 1.25em;
+}
+
+#experience ul {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#experience li {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+#experience table td, #experience table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+#experience table th {
+  font-weight: 600;
+  text-align: center;
+  background-color: #F4F8FC;
+}
+
+#experience table tr:nth-child(2n) {
+  //background-color: #f6f8fa;
+}

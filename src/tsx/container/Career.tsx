@@ -6,6 +6,7 @@ import STRING from '../../asset/string'
 import CareerBox from "../components/CareerBox"
 
 export interface CareerProps {
+    onShowExperience: () => void
 }
 export interface CareerState {
 }
@@ -16,7 +17,7 @@ export default class Career extends React.Component<CareerProps, CareerState> {
             <div id="career">
                 <div id="career_backgroud">
                     <div id="career_frame" className="section_frame">
-                        <div className="section_title_r">
+                        <div className="section_title_r" onClick={this.props.onShowExperience}>
                             CAREER
                         </div>
                         <div className="section_content_r">
