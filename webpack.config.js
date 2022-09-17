@@ -25,7 +25,7 @@ module.exports = {
         rules: [
             // A loader for webpack which transforms files into base64 URIs.
             {
-                test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+                test: /\.(pdf|jpg|png|gif|svg|ico|md)$/,
                 use: [
                     {
                         loader: "url-loader",

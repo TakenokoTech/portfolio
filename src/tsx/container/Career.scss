@@ -15,6 +15,12 @@
                     padding: 0;
                 }
 
+                .section_title_clickable:hover {
+                    color: white;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
                 .bigmark {
                     position: absolute;
                     width: $careerboox_graph_width_b;
