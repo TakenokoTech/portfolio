@@ -1,17 +1,43 @@
 #experience {
+  position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  background-color: #f6f6f6;
+  background-color: #f6f6f6CC;
   line-height: 1.5;
-  padding: 48px;
+  z-index: 10000;
 }
 
-#experience_backgroud {
+#experience_background {
+  position: relative;
   max-width: 960px;
   padding: 16px 32px 32px;
-  margin: 0 auto;
+  margin: 16px auto;
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  // overflow-y: scroll;
+  // overscroll-behavior: contain;
+}
+
+#close_button {
+  border-radius: 8px;
+  text-align: center;
+  color: #444;
+  // border: 1px #444 solid;
+  margin: 60px auto;
+  padding: 16px 32px;
+  display: table;
+  cursor: pointer;
+  user-select:none;
+  transition: all .3s;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    background-color: #F6F6F6;
+  }
 }
 
 // ========================================

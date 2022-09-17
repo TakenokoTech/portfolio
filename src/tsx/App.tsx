@@ -30,6 +30,7 @@ export default class App extends React.Component<AppProps, AppState> {
         this.state = initState
         this.onFinishedOpening = this.onFinishedOpening.bind(this)
         this.onShowExperience = this.onShowExperience.bind(this)
+        this.onHiddenExperience = this.onHiddenExperience.bind(this)
     }
 
     onFinishedOpening() {
@@ -40,13 +41,18 @@ export default class App extends React.Component<AppProps, AppState> {
         this.setState({showExperience: true})
     }
 
+    onHiddenExperience() {
+        window.scrollTo(0, 0);
+        this.setState({showExperience: false})
+    }
+
     render() {
 
         if (!this.state.openingFinished) {
             return <Scene1 finishTrigger={this.onFinishedOpening}/>
         }
         if (this.state.showExperience) {
-            return <Experience />
+            return <Experience onHiddenExperience = {this.onHiddenExperience}/>
         }
         return <>
             <Header/>
