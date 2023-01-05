@@ -37,7 +37,7 @@ export default {
     product: [
         {
             no: 1,
-            img: Image.icon,
+            img: Image.androbo,
             title: "android app",
             text: "blackboard app, notify app",
             url: "https://play.google.com/store/apps/dev?id=5785483366313980962&hl=ja"
@@ -54,7 +54,7 @@ export default {
             img: Image.qiita,
             title: "Qiita",
             text: "tips",
-            url: "https://qiita.com/TakenokoTech"
+            url: "https://qiita.com/metanue"
         }
     ],
     career: [
@@ -93,6 +93,9 @@ export default {
         email: "takenoko.tech@gmail.com"
     },
     fotter: {
-        text: "© 2022 Takenoko Tech."
+        text: "© 2023 Takenoko."
+    },
+    caution: {
+        product: "The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License."
     }
 }
