@@ -11,6 +11,10 @@
         cursor: default;
         border-radius: 512px;
 
+        @include max-screen($breakpoint-mobile) {
+            margin: 8px;
+        }
+
         .mask,
         .content {
             width: 100%;
@@ -37,7 +41,13 @@
             transition: all 0.2s linear;
             margin: 48px;
             background-repeat: no-repeat;
-            background-position: center center; 
+            background-position: center center;
+
+            @include max-screen($breakpoint-mobile) {
+                min-width: 60px;
+                min-height: 60px;
+                margin: 16px;
+            }
         }
 
         h2 {
