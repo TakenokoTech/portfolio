@@ -54,7 +54,7 @@ export default {
             img: Image.qiita,
             title: "Qiita",
             text: "tips",
-            url: "https://qiita.com/TakenokoTech"
+            url: "https://qiita.com/metanue"
         }
     ],
     career: [
@@ -93,6 +93,6 @@ export default {
         email: "takenoko.tech@gmail.com"
     },
     fotter: {
-        text: "© 2022 Takenoko Tech."
+        text: "© 2023 Takenoko."
     }
 }
