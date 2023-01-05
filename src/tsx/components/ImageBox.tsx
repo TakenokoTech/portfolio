@@ -32,8 +32,8 @@ export default class ImageBox extends React.Component<ImageBoxProps, ImageBoxSta
             <div className="view" ref='box'>
                 <span className="img" style={{ backgroundImage: `url(${this.props.img})` }} />
                 <div className="mask">
-                    <h2>{this.props.title}</h2>
-                    <p>{this.props.text}</p>
+                    {/*<h2>{this.props.title}</h2>*/}
+                    {/*<p>{this.props.text}</p>*/}
                     <a href={this.props.url} className="info"></a>
                 </div>
             </div>

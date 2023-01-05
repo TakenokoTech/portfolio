@@ -21,6 +21,9 @@ export default class Product extends React.Component<ProductProps, ProductState>
                         <div className="section_content">
                             {map(x => <ImageBox no={x.no} img={x.img} title={x.title} text={x.text} url={x.url} />, STRING.product)}
                         </div>
+                        <div className="section_caution">
+                            {STRING.caution.product}
+                        </div>
                     </div>
                 </div>
             </div>
