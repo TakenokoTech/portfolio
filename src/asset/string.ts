@@ -54,7 +54,7 @@ export default {
             img: Image.qiita,
             title: "Qiita",
             text: "tips",
-            url: "https://qiita.com/metanue"
+            url: "https://qiita.com/takencoo"
         }
     ],
     career: [
