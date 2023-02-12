@@ -17,7 +17,7 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                 <div id="header_backgroud">
                     <div id="header_frame">
                         {/* <img src={Image.name} /> */}
-                        <div id="name">takencoo</div>
+                        <div id="name">TAKENCOO</div>
                         <div id="subtext">software engineer</div>
                         {/* <div id="button">
                             <Button className="button_reverse"><FaUserAlt /></Button>
