@@ -2,7 +2,7 @@ import Image from '../asset/image.js'
 
 export default {
     header: {
-        name: "TAKENOKO",
+        name: "takencoo",
         position: "software engineer"
     },
     aboutme: {
