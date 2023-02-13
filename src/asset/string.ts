@@ -54,7 +54,7 @@ export default {
             img: Image.qiita,
             title: "Qiita",
             text: "tips",
-            url: "https://qiita.com/metanue"
+            url: "https://qiita.com/takencoo"
         }
     ],
     career: [
@@ -93,7 +93,7 @@ export default {
         email: "takenoko.tech@gmail.com"
     },
     fotter: {
-        text: "© 2023 Takenoko."
+        text: "© 2023 takencoo."
     },
     caution: {
         product: "The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License."
