@@ -22,7 +22,7 @@
         "@storybook/addons": "^6.5.10",
         "@storybook/builder-webpack5": "^6.5.10",
         "@storybook/manager-webpack5": "^6.5.10",
-        "@storybook/react": "^6.5.10",
+        "@storybook/react": "^7.0.2",
         "@types/ramda": "^0.28.15",
         "@types/react": "^18.0.18",
         "@types/react-dom": "^18.0.6",
