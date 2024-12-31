@@ -87,13 +87,23 @@ export default {
             year: "2021",
             title: "EdgeAI platform",
             text: "Achieved fast machine learning inference on-device using TensorFlow Lite."
+        },
+        {
+            year: "2023",
+            title: "GenAI Apps",
+            text: "Created a chat app using generative AI. It's wonderful to be able to have natural language conversations with AI."
+        },
+        {
+            year: "2024",
+            title: "On-device Generated AI",
+            text: "Challenge of using high-performance generative AI while protecting privacy."
         }
     ],
     contact: {
         email: "takenoko.tech@gmail.com"
     },
     fotter: {
-        text: "© 2023 takencoo."
+        text: "© 2025 takencoo."
     },
     caution: {
         product: "The Android robot is reproduced or modified from work created and shared by Google and used according to terms described in the Creative Commons 3.0 Attribution License."
